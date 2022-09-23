@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 10px 0;
+            background-color: silver;
+
+        }
+
+        h1 {
+            background-color: white;
+            background-color: hsla(0, 100%, 100%, .5);
+            color: #64645A;
+            padding: inherit;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(120, 144, 216, 0.24);
+            border: 2px solid black;
+            height: 830px;
+            width: 50%;
+            margin: auto;
+            font-family: 'Abril Fatface', cursive;
+            font-family: 'Roboto', sans-serif;
+            font-size: larger;
+            font-style: normal;
+            font-weight: bolder;
+
+
+        }
+
+        h2 {
+            color: blue;
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+
+        }
+
+        h4 {
+            color: #9e369e;
+            text-align: left;
+            padding: 10px 0px 10px 20px;
+
+        }
+
+        .RGB {
+            background-color: white;
+            border: 2px solid white;
+            width: 96%;
+            height: 235px;
+            margin: auto;
+
+        }
+
+        .cont1 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .display {
+            display: inline-block;
+            padding: 0px 0px;
+
+        }
+
+
+        .zero {
+            background-color: #ff0000;
+            height: 78px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .one {
+            background-color: #E60C16CC;
+            ;
+            height: 82px;
+            width: 34px;
+            border-radius: 20px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .two {
+            background-color: #E60C16A6;
+            ;
+            height: 86px;
+            width: 34px;
+            border-radius: 20px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .three {
+            background-color: #E60C1687;
+            height: 90px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .four {
+            background-color: #E60C1663;
+            ;
+            height: 94px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .five {
+            background-color: #E8111A5C;
+            height: 98px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .six {
+            background-color: #E8111A33;
+            height: 102px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .seven {
+            background-color: #39323212;
+            ;
+            height: 106px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .eight {
+            background-color: #00B5E238;
+            height: 106px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .nine {
+            background-color: #00B5E252;
+            height: 98px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .ten {
+            background-color: #00B5E26B;
+            ;
+            height: 94px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .eleven {
+            background-color: #00B5E299;
+            ;
+            height: 90px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .twelve {
+            background-color: #00B5E2D9;
+            height: 86px;
+            width: 34px;
+            border-radius: 20px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .thirteen {
+            background-color: #00B5E2F0;
+            height: 82px;
+            width: 34px;
+            border-radius: 20px;
+            margin: 23px 0px 0px 0px;
+        }
+
+        .fourteen {
+            background-color: #00AED9;
+            ;
+            height: 78px;
+            width: 34px;
+            border-radius: 34px;
+            margin: 23px 0px 0px 0px;
+
+        }
+
+        .num {
+            display: inline-block;
+
+        }
+
+        .num0 {
+            padding: 0px 0px 0px 25px;
+        }
+
+        .num1 {
+            padding: 0px 0px 0px 25px;
+
+        }
+
+        .num2 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num3 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num4 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num5 {
+            padding: 0px 0px 0px 22px;
+
+        }
+
+        .num6 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num7 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num8 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num9 {
+            padding: 0px 0px 0px 23px;
+
+        }
+
+        .num10 {
+            padding: 0px 0px 0px 17px;
+
+        }
+
+        .num11 {
+            padding: 0px 0px 0px 15px;
+
+        }
+
+        .num12 {
+            padding: 0px 0px 0px 9px;
+
+        }
+
+        .num13 {
+            padding: 0px 0px 0px 14px;
+
+        }
+
+        .num14 {
+            padding: 0px 0px 0px 14px;
+
+        }
+
+        .span {
+            padding: 20px 0px 0px 0px;
+
+        }
+
+        .span1 {
+            padding: 7px 24px 0px 0px;
+            margin: 0px 148px 0px 18px;
+        }
+
+        .span2 {
+            padding: 7px 0px 0px 0px;
+            margin: 0px 148px 0px 18px;
+        }
+
+        .span3 {
+            padding: 12px 12px 12px 12px;
+            margin: 12px 12px 12px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PH Scale Sheet</h1>
+        <h2>CSS COLORS</h2>
+        <h4>PH SCALE USING RGB VALUES</h4>
+
+        <div class="RGB">
+            <div class="span">
+                <span class="span1">Acidic</span>
+                <span class="span2">Neutal</span>
+                <span class="span3">Alkaline</span>
+            </div>
+
+            <div class="cont1">
+                <p class="zero display"></p>
+                <p class="one display"></p>
+                <p class="two display"></p>
+                <p class="three display"></p>
+                <p class="four display"></p>
+                <p class="five display"></p>
+                <p class="six display"></p>
+                <p class="seven display"></p>
+                <p class="eight display"> </p>
+                <p class="nine display"></p>
+                <p class="ten display"> </p>
+                <p class="eleven display"> </p>
+                <p class="twelve display"></p>
+                <p class="thirteen display"></p>
+                <p class="fourteen display"></p>
+            </div>
+
+            <div class="num">
+                <p class="num num0">0</p>
+                <p class="num num1">1</p>
+                <p class="num num2">2</p>
+                <p class="num num3">3</p>
+                <p class="num num4">4</p>
+                <p class="num num5">5</p>
+                <p class="num num6">6</p>
+                <p class="num num7">7</p>
+                <p class="num num8">8</p>
+                <p class="num num9">9</p>
+                <p class="num num10">10</p>
+                <p class="num num11">11</p>
+                <p class="num num12">12</p>
+                <p class="num num13">13</p>
+                <p class="num num14">14</p>
+            </div>
+
+
+        </div>
+        <h4>PH SCALE USING HEX VALUES</h4>
+        <div class="RGB">
+            <div class="span">
+                <span class="span1">Acidic</span>
+                <span class="span2">Neutal</span>
+                <span class="span3">Alkaline</span>
+            </div>
+
+            <div class="cont1">
+                <p class="zero display"></p>
+                <p class="one display"></p>
+                <p class="two display"></p>
+                <p class="three display"></p>
+                <p class="four display"></p>
+                <p class="five display"></p>
+                <p class="six display"></p>
+                <p class="seven display"></p>
+                <p class="eight display"> </p>
+                <p class="nine display"></p>
+                <p class="ten display"> </p>
+                <p class="eleven display"> </p>
+                <p class="twelve display"></p>
+                <p class="thirteen display"></p>
+                <p class="fourteen display"></p>
+            </div>
+
+            <div class="num">
+                <p class="num num0">0</p>
+                <p class="num num1">1</p>
+                <p class="num num2">2</p>
+                <p class="num num3">3</p>
+                <p class="num num4">4</p>
+                <p class="num num5">5</p>
+                <p class="num num6">6</p>
+                <p class="num num7">7</p>
+                <p class="num num8">8</p>
+                <p class="num num9">9</p>
+                <p class="num num10">10</p>
+                <p class="num num11">11</p>
+                <p class="num num12">12</p>
+                <p class="num num13">13</p>
+                <p class="num num14">14</p>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
